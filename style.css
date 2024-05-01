@@ -2,8 +2,31 @@
     margin: 0;
     padding: 0;
 }
+/* -------NAV SECTION ------------*/
 
 nav{
     background-color: aqua;
-    /* height: 250px; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+/* -- //BRAND-LOGO// -- */
+.brand-logo{
+    height: inherit;
+    width: 12%;
+    background-color: red;
+    overflow: hidden;
+}
+img{
+    height: 7rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
 }
