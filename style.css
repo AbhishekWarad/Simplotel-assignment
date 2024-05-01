@@ -1,51 +1,131 @@
 *{
-    margin: 0;
+    margin:0;
 }
-/* -------NAV SECTION ------------*/
+/* --------- NAV SECTION ------------*/
 
 nav{
-    /* background-color: aqua; */
-    background-color: aqua;
     height: 70px;
-    width: 100%;
+    width: 100vw;
+    /* padding: 0 10px; */
+    background-color: aliceblue;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
-}
-/* -- // BRAND-LOGO // -- */
-.brand-logo{
-    height: inherit;
-    width: 8vw;
-    background-color: red;
-    overflow: hidden;
-}
-img{
-    height: 8vw;
-    /* padding: 1vw; */
+    position: relative;
 }
 
+/* -- // BRAND-LOGO // -- */
+.brand-logo{
+    width:10%;
+}
+.brand-logo img{
+    width: 70px;
+    height: 70px;
+}
+
+/* -- // NAV-MENU // -- */
 a{
     text-decoration: none;
 }
 
-li{
-    list-style-type: none;
+.nav-menu{
+    display: flex;
+    gap:4vw;
 }
 
-/* -- // NAV-MENU //-- */
-.nav-menu{ 
-    width:70%;
-    display: flex;
-    align-items:center ;
+.nav-menu h4{
+    font-size: 1.3vw;
+    color: black;
+    /* margin-right: 4vw; */
 }
-ul{
-    width: 100%;
+
+/* -- // SOCIAL-MEDIA// -- */
+
+.social-media{
+    width: 10%;
     display: flex;
-    justify-content: center;
+    gap:3vw;
     
 }
-li{
-    display: inline;
-    font-size: 1.2rem; 
-    margin-right:5%; 
+.social-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.social-media i{
+    font-size: 30px;
 }
+
+.fa-whatsapp{
+    color:#128c7e;
+}
+.fa-facebook{
+    color: #1877F2;
+}
+
+.slide-bar{
+    display: none;
+    font-weight: 800;
+    font-size: 5vw;
+}
+
+/* --------- END OF NAV SECTION ------------*/
+
+@media (max-width:600px) {
+    .nav-menu{
+        display: none;
+    }
+    .social-media{
+        display: none;
+    }
+    .slide-bar{
+        display: block;
+        padding-right: 10px;
+    }
+    .slide-menu{
+        display: none;
+    }
+}
+
+/* --------- START OF BANNER-BODY ------------*/
+
+
+.banner{
+    height: 70vw;
+    /* width: 100%; */
+    background: url("./resourses/heroimg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+   
+
+.banner button{
+    background: rgb(3,3,3);
+    background: linear-gradient(68deg, rgba(19, 19, 19, 0.993) 30%, rgba(250,250,251,1) 90%);
+    border:none;
+    color: white;
+    padding: 1vw 5vw;
+    position:relative ;
+    top: 90%;
+    left:5%
+}
+@media (max-width:600px){
+    .banner button{
+        top: 80%;
+        left:10%
+    }
+}
+
+/* --------- END OF BANNER-BODY ------------*/
+
+/* --------- START OF BANNER-DETAILS ------------*/
+
+.banner-details{
+    display: flex;
+    padding: 3vw 2vw ;
+    background-color: #b2b2b2;
+}
+
+.banner-description{}
