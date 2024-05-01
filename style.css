@@ -1,26 +1,27 @@
 *{
     margin: 0;
-    padding: 0;
 }
 /* -------NAV SECTION ------------*/
 
 nav{
+    /* background-color: aqua; */
     background-color: aqua;
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
-/* -- //BRAND-LOGO// -- */
+/* -- // BRAND-LOGO // -- */
 .brand-logo{
     height: inherit;
-    width: 10%;
+    width: 8vw;
     background-color: red;
     overflow: hidden;
 }
 img{
-    height: 7rem;
+    height: 8vw;
+    /* padding: 1vw; */
 }
 
 a{
@@ -30,7 +31,8 @@ a{
 li{
     list-style-type: none;
 }
-/* -- //END - BRAND-LOGO// -- */
+
+/* -- // NAV-MENU //-- */
 .nav-menu{ 
     width:70%;
     display: flex;
@@ -44,6 +46,6 @@ ul{
 }
 li{
     display: inline;
-    font-size: 1.4rem;
-    margin-right:3rem;
+    font-size: 1.2rem; 
+    margin-right:5%; 
 }
