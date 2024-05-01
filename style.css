@@ -15,7 +15,7 @@ nav{
 /* -- //BRAND-LOGO// -- */
 .brand-logo{
     height: inherit;
-    width: 12%;
+    width: 10%;
     background-color: red;
     overflow: hidden;
 }
@@ -29,4 +29,21 @@ a{
 
 li{
     list-style-type: none;
+}
+/* -- //END - BRAND-LOGO// -- */
+.nav-menu{ 
+    width:70%;
+    display: flex;
+    align-items:center ;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+li{
+    display: inline;
+    font-size: 1.4rem;
+    margin-right:3rem;
 }
