@@ -144,19 +144,48 @@ a{
         padding: 3vw 2vw ;
     }
 }
-/* --------- END OF BANNER-DETAILS ------------ */
+/* ---------- END OF BANNER-DETAILS ------------ */
+
+
+/* --------- START OF CARD-BODY------------*/
 
 .card-body{
     padding: 3vw 3vw;
     display: flex;
     flex-direction: column;
+    background-color: royalblue;
 }
 
 .card-body h1{
     padding: 2vw 0;
 }
 
-.c-image img{
-    width: 30px;
+/* ----- // CARD-DIV ----// */
+.cards-div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rosybrown;
 }
+
+.card{
+    height: fit-content;
+    width: 25vw;
+}
+/* card-img */
+.card .c-image img{
+    width: 100%;
+}
+/* card-details */
+.card .c-details{
+    padding: 2vw 0;
+    font-weight: 600;
+}
+.card .c-details h3{
+    padding: 0 0 1vw 0;
+}
+
+/* card-button */
+
+
+
 
