@@ -126,6 +126,20 @@ a{
     display: flex;
     padding: 3vw 2vw ;
     background-color: #b2b2b2;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
-.banner-description{}
+.banner-description{
+    width: 20vw;
+}
+
+@media (max-width : 600px) {
+    .banner-details{
+        flex-direction: column;
+       
+    }
+    .banner-description{
+        width: 100%;
+    }
+}
