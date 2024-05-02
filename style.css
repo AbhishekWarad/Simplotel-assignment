@@ -7,13 +7,157 @@ nav{
     height: 70px;
     width: 100vw;
     /* padding: 0 10px; */
-    background-color: aliceblue;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     position: relative;
 }
+
+/* ---//for mobile device//--- */
+.for-mobile{
+    display: none;
+    position: absolute;
+    text-align: start;
+    left:50vw;
+}
+
+
+#check{
+    display: none;
+}
+.sidebar_menu{
+    height: 100vh;
+    background-color: #dad6dfe8;
+    width: 50vw;
+}
+
+/* -----------------------------------for mobile---------------------------------------------------- */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.btn_one i{
+    color: rgba(255, 255, 255, 0);
+    font-size: 30px;
+    font-weight:700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0 0 8px rgba(43, 41, 41, 0.5);
+    transition: all 0.3s linear;
+}
+
+
+.sidebar_menu .logo a {
+    position: relative;
+    left: 67px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.sidebar_menu .btn_two i{
+    position: absolute;
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    left: 275px;
+ 
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.sidebar_menu .menu{
+    position:absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media{
+ 
+    position: absolute;
+    left: 25%;
+    bottom: 150px;
+    font-size: 50px;
+}
+
+.sidebar_menu .social_media i{
+
+    padding: 0 5px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);;
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+#check:checked ~ .banner button {
+    display: none;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+#check:checked ~ .banner button{
+    display: none;
+}
+/* -------------------------------------for mobile-------------------------------------------------- */
 
 /* -- // BRAND-LOGO // -- */
 .brand-logo{
@@ -73,21 +217,7 @@ a{
 
 /* --------- END OF NAV SECTION ------------*/
 
-@media (max-width:600px) {
-    .nav-menu{
-        display: none;
-    }
-    .social-media{
-        display: none;
-    }
-    .slide-bar{
-        display: block;
-        padding-right: 10px;
-    }
-    .slide-menu{
-        display: none;
-    }
-}
+
 
 /* --------- START OF BANNER-BODY ------------*/
 
@@ -109,14 +239,10 @@ a{
     padding: 1vw 5vw;
     position:relative ;
     top: 90%;
-    left:5%
+    left:5%;
+    z-index: 0;
 }
-@media (max-width:600px){
-    .banner button{
-        top: 80%;
-        left:10%
-    }
-}
+
 
 /* --------- END OF BANNER-BODY ------------*/
 
@@ -134,22 +260,14 @@ a{
     width: 20vw;
 }
 
-@media (max-width : 600px) {
-    .banner-details{
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-    }
-    .banner-description{
-        width: 90%; 
-        padding: 3vw 2vw ;
-    }
-}
+
 /* ---------- END OF BANNER-DETAILS ------------ */
 
 
 /* --------- START OF CARD-BODY------------*/
 
 .card-body{
+    background-color: #dad6df;
     padding: 3vw 3vw;
     display: flex;
     flex-direction: column;
@@ -204,6 +322,38 @@ a{
 
 
 @media (max-width : 600px) {
+    .nav-menu{
+        display: none;
+    }
+    .social-media{
+        display: none;
+    }
+    .slide-bar{
+        display: block;
+        padding-right: 10px;
+    }
+    .slide-menu{
+        display: none;
+    }
+
+    .for-mobile{
+        display: inline;
+    }
+
+    .banner button{
+        top: 80%;
+        left:10%
+    }
+
+    .banner-details{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .banner-description{
+        width: 90%; 
+        padding: 3vw 2vw ;
+    }
+
     .cards-div{
         flex-direction: column;
         align-items: center;
