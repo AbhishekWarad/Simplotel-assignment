@@ -153,7 +153,7 @@ a{
     padding: 3vw 3vw;
     display: flex;
     flex-direction: column;
-    background-color: royalblue;
+    /* background-color: royalblue; */
 }
 
 .card-body h1{
@@ -164,12 +164,13 @@ a{
 .cards-div{
     display: flex;
     justify-content: space-between;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
 }
 
 .card{
     height: fit-content;
     width: 25vw;
+    padding-bottom: 3vh;
 }
 /* card-img */
 .c-image img{
@@ -187,8 +188,8 @@ a{
 /* card-button */
 .c-button button{
     border:none;
-    width: 10vw;
-    height: 2vw;
+    width: 12rem;
+    height: 2rem;
     color: white;
     background-color: black;
 }
@@ -201,3 +202,15 @@ a{
     text-align: end;
 }
 
+
+@media (max-width : 600px) {
+    .cards-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        height: fit-content;
+        width: 100%;
+    }
+}
